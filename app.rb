@@ -8,7 +8,7 @@ end
 
 get '/square/:number' do 
 
-@numbers params[number].to_i 
+@number = params[number].to_i 
     "#{@number ** 2}"
 end 
 
