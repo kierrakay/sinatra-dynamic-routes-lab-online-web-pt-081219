@@ -7,7 +7,8 @@ params[:name].reverse
 end 
 
 get '/square/:number' do 
-params[number].to_i 
+
+@numbers params[number].to_i 
     "#{@number ** 2}"
 end 
 
